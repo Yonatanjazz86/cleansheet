@@ -5,101 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CleanSheet Pro - Tu Excel desordenado, limpio en segundos</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        section { padding: 60px 20px; text-align: center; }
+        section:nth-child(even) { background: #f8fafc; }
+        img.funcion { max-width:700px; width:100%; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); display:block; margin:30px auto; }
+        .grid-capturas { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
+        .grid-capturas img { width:100%; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.1); }
+    </style>
 </head>
 <body>
     <!-- HERO -->
-    <!-- HERO -->
-<section class="hero">
-    <div class="container">
-        <h1>CleanSheet</h1>
-        <h2>Tu Excel desordenado, limpio en segundos.</h2>
-        <p>CleanSheet Pro limpia, une, compara y analiza tus Excel sin subir nada a internet.</p>
-        
-        <img src="img/pantalla-principal.png" alt="CleanSheet Pantalla Principal" style="max-width:900px; width:100%; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.15); display:block; margin:20px auto;">
-        
-        <a href="#descarga" class="btn">Descargar CleanSheet Pro</a>
-        
-        <div class="demo-img">
-            <span>Antes</span> → <span>CleanSheet</span> → <span>Después</span>
-            <!-- SECCION COMPARAR -->
-<section style="padding: 60px 20px; text-align: center;">
-  <h2>Comparar dos Excel</h2>
-  <p style="font-size: 18px; color: #555; max-width: 600px; margin: 0 auto 30px;">
-    Compara 2 archivos y encuentra en segundos qué cambió, qué se agregó y qué se eliminó.
-  </p>
-  <img src="img/comparar_excel1.png" 
-       alt="Comparar Excel CleanSheet" 
-       style="max-width:700px; width:100%; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); display:block; margin:0 auto 30px;">
-  <a href="#descarga" class="btn">Probar Comparar Ahora</a>
-</section>
-        </div>
-    </div>
-</section>
-
-    <!-- PROBLEMA -->
-    <section class="problema">
+    <section class="hero" style="background: linear-gradient(135deg, #2563eb, #1e40af); color:white;">
         <div class="container">
-            <h3>¿Tienes archivos Excel llenos de datos desordenados?</h3>
-            <p>Duplicados, fechas mal, datos vacíos... CleanSheet lo arregla en 1 click.</p>
-        </div>
-    </section>
-
-    <!-- FUNCIONES -->
-    <section class="funciones">
-        <div class="container">
-            <h3>20 Funciones para dominar Excel</h3>
-            <div class="grid">
-                <div class="card">
-                    <h4>🧹 Limpieza</h4>
-                    <ul>
-                        <li>Quitar duplicados exactos y similares</li>
-                        <li>Arreglar texto y mayúsculas</li>
-                        <li>Arreglar fechas en cualquier formato</li>
-                        <li>Quitar filas y columnas vacías</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h4>⚡ Productividad</h4>
-                    <ul>
-                        <li>Juntar varios Excel en uno</li>
-                        <li>Separar por columna en archivos</li>
-                        <li>Comparar 2 versiones y ver cambios</li>
-                        <li>Pegar datos de WhatsApp a tabla</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h4>📊 Análisis</h4>
-                    <ul>
-                        <li>Estadísticas y gráficas rápidas</li>
-                        <li>Reportes automáticos con totales</li>
-                        <li>Formulador: escribe y genera fórmulas</li>
-                        <li>Detectar fórmulas rotas #REF! #N/D</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h4>📁 Exportar</h4>
-                    <ul>
-                        <li>Convertir Excel ↔ CSV</li>
-                        <li>Exportar a PDF</li>
-                        <li>Plantillas para clientes, ventas, etc</li>
-                        <li>Buscar y reemplazar masivo</li>
-                    </ul>
-                </div>
+            <h1 style="font-size:48px;">CleanSheet</h1>
+            <h2>Tu Excel desordenado, limpio en segundos.</h2>
+            <p>CleanSheet Pro limpia, une, compara y analiza tus Excel sin subir nada a internet.</p>
+            
+            <img src="img/pantalla-principal.png" alt="CleanSheet Pantalla Principal" class="funcion" style="max-width:900px;">
+            
+            <a href="#descarga" class="btn" style="background:white; color:#2563eb; padding:15px 35px; border-radius:8px; text-decoration:none; font-weight:bold; font-size:18px;">Descargar CleanSheet Pro</a>
+            
+            <div class="demo-img" style="margin-top:20px;">
+                <span>Antes</span> → <span>CleanSheet</span> → <span>Después</span>
             </div>
         </div>
     </section>
 
-    <!-- CAPTURAS -->
-    <section class="capturas">
+    <!-- PROBLEMA -->
+    <section class="problema">
         <div class="container">
-            <h3>Ve CleanSheet en acción</h3>
-            <div class="grid-capturas">
-                <div><img src="img/comparar.png" alt="Comparar Excel"><p>Comparar Excel</p></div>
-                <div><img src="img/juntar.png" alt="Juntar archivos"><p>Juntar archivos</p></div>
-                <div><img src="img/duplicados.png" alt="Quitar duplicados"><p>Quitar duplicados</p></div>
-                <div><img src="img/whatsapp.png" alt="Pegar WhatsApp"><p>Pegar WhatsApp</p></div>
-                <div><img src="img/formulador.png" alt="Formulador"><p>Formulador</p></div>
-                <div><img src="img/reportes.png" alt="Reportes"><p>Reportes automáticos</p></div>
+            <h3 style="font-size:32px;">¿Tienes archivos Excel llenos de datos desordenados?</h3>
+            <p style="font-size:18px;">Duplicados, fechas mal, datos vacíos... CleanSheet lo arregla en 1 click.</p>
+        </div>
+    </section>
+
+    <!-- FUNCION 1: COMPARAR -->
+    <section>
+        <h3>⚡ Comparar 2 Excel</h3>
+        <p style="max-width:600px; margin:0 auto;">Compara 2 archivos y encuentra en segundos qué cambió, qué se agregó y qué se eliminó. Perfecto para auditorías.</p>
+        <img src="img/comparar_excel.png" alt="Comparar Excel" class="funcion">
+    </section>
+
+    <!-- FUNCION 2: JUNTAR -->
+    <section>
+        <h3>📁 Juntar Archivos</h3>
+        <p style="max-width:600px; margin:0 auto;">Une 10 Excels en 1 solo archivo en 1 clic. Dile adiós a copiar y pegar.</p>
+        <img src="img/juntar_archivos.png" alt="Juntar Archivos" class="funcion">
+    </section>
+
+    <!-- FUNCION 3: DUPLICADOS -->
+    <section>
+        <h3>🧹 Quitar Duplicados</h3>
+        <p style="max-width:600px; margin:0 auto;">Elimina duplicados exactos y similares. Deja tu base de datos limpia al instante.</p>
+        <img src="img/quitar_duplicados.png" alt="Quitar Duplicados" class="funcion">
+    </section>
+
+    <!-- FUNCION 4: FORMULAS -->
+    <section>
+        <h3>🔧 Arreglar Fórmulas Rotas</h3>
+        <p style="max-width:600px; margin:0 auto;">Detecta y repara errores #REF! #N/D #VALOR! automáticamente.</p>
+        <img src="img/formulas_rotas.png" alt="Arreglar Formulas" class="funcion">
+    </section>
+
+    <!-- FUNCION 5: REPORTES -->
+    <section>
+        <h3>📊 Reportes Automáticos</h3>
+        <p style="max-width:600px; margin:0 auto;">Genera totales, gráficas y resúmenes con 1 click. Sin hacer fórmulas.</p>
+        <img src="img/reportes_automaticos.png" alt="Reportes Automáticos" class="funcion">
+    </section>
+
+    <!-- FUNCION 6: FORMULADOR -->
+    <section>
+        <h3>✍️ Formulador Inteligente</h3>
+        <p style="max-width:600px; margin:0 auto;">Escribe lo que necesitas en español y CleanSheet te genera la fórmula de Excel.</p>
+        <img src="img/formulador.png" alt="Formulador" class="funcion">
+    </section>
+
+    <!-- FUNCION 7: WHATSAPP -->
+    <section>
+        <h3>📱 Pegar desde WhatsApp</h3>
+        <p style="max-width:600px; margin:0 auto;">Copia datos de WhatsApp y pégalos directo como tabla en Excel.</p>
+        <img src="img/pegar_whatsapp.png" alt="Pegar WhatsApp" class="funcion">
+    </section>
+
+    <!-- EJEMPLOS DE REPORTES -->
+    <section>
+        <h3>Ve CleanSheet en acción</h3>
+        <div class="grid-capturas">
+            <div>
+                <img src="img/reporte_1.png" alt="Reporte 1">
+                <p>Reporte de Ventas</p>
+            </div>
+            <div>
+                <img src="img/reporte_2.png" alt="Reporte 2">
+                <p>Reporte de Inventario</p>
+            </div>
+            <div>
+                <img src="img/reporte_3.png" alt="Reporte 3">
+                <p>Reporte de Clientes</p>
             </div>
         </div>
     </section>
@@ -108,7 +111,7 @@
     <section class="precios">
         <div class="container">
             <h3>Elige tu plan</h3>
-            <table>
+            <table style="margin:0 auto;">
                 <tr><th>Función</th><th>Basic</th><th>Pro</th></tr>
                 <tr><td>Quitar duplicados</td><td>✓</td><td>✓</td></tr>
                 <tr><td>Arreglar texto</td><td>✓</td><td>✓</td></tr>
@@ -131,14 +134,14 @@
     </section>
 
     <!-- DESCARGA -->
-    <section id="descarga" class="cta">
+    <section id="descarga" class="cta" style="background: #2563eb; color:white;">
         <div class="container">
             <h3>Empieza a limpiar Excel hoy</h3>
-            <a href="#" class="btn">Descargar CleanSheet Pro</a>
+            <a href="#" class="btn" style="background:white; color:#2563eb;">Descargar CleanSheet Pro</a>
         </div>
     </section>
 
-    <footer>
+    <footer style="text-align:center; padding:20px;">
         <p>© 2026 CleanSheet. Hecho en Guatemala</p>
     </footer>
 </body>

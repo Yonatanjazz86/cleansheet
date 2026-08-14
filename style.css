@@ -1,0 +1,16 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { color: #333; line-height: 1.6; }
+.container { max-width: 1100px; margin: auto; padding: 40px 20px; }
+.hero { background: #2563eb; color: white; text-align: center; padding: 80px 20px; }
+.hero h1 { font-size: 3rem; }
+.hero h2 { font-size: 1.5rem; margin: 10px 0; }
+.btn { background: white; color: #2563eb; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 20px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.card { background: #f3f4f6; padding: 20px; border-radius: 10px; }
+.grid-capturas { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.grid-capturas img { width: 100%; border-radius: 8px; border: 1px solid #ddd; }
+table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+th, td { padding: 12px; border: 1px solid #ddd; text-align: center; }
+.seguridad { background: #ecfdf5; text-align: center; }
+.cta { background: #2563eb; color: white; text-align: center; }
+footer { text-align: center; padding: 20px; background: #111; color: white; }

@@ -1,185 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CleanSheet Pro - Your Messy Excel, Clean in Seconds</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        section { padding: 60px 20px; text-align: center; }
-        section:nth-child(even) { background: #f8fafc; }
-        img.funcion { max-width:700px; width:100%; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); display:block; margin:30px auto; }
-        .grid-capturas { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
-        .grid-capturas img { width:100%; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.1); }
-        
-        /* RESPONSIVE PARA CELULAR */
-        @media (max-width: 768px) {
-          section { padding: 40px 15px !important; }
-          h1 { font-size: 32px !important; }
-          h2 { font-size: 20px !important; }
-          h3 { font-size: 24px !important; }
-          .demo-img { max-width: 100% !important; }
-          .grid-capturas { grid-template-columns: 1fr !important; }
-          div[style*="display:flex"] { flex-direction: column !important; gap: 15px !important; }
-          .btn { width: 100%; max-width: 300px; margin: 0 auto; display: block; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CleanSheet — Your messy Excel, cleaned in seconds</title>
+  <meta name="description" content="Windows desktop app that cleans Excel and CSV on your PC: duplicates, dates, text, merge, compare, Spanish formula builder, PDF. 100% local. One-time payment. Basic $21.99, Pro $41.99.">
+  <link rel="canonical" href="https://yonatanjazz86.github.io/cleansheet/">
+  <meta property="og:title" content="CleanSheet — Your messy Excel, cleaned in seconds">
+  <meta property="og:description" content="Clean Excel on your computer. Nothing uploaded. One-time license for Windows.">
+  <meta property="og:image" content="https://yonatanjazz86.github.io/cleansheet/img/pantalla-principal.png">
+  <meta property="og:url" content="https://yonatanjazz86.github.io/cleansheet/">
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- HERO -->
-    <section class="hero" style="background: linear-gradient(135deg, #2563eb, #1e40af); color: white;">
-        <div class="container" style="text-align:center;">
-            <div style="display:inline-flex; align-items:center; justify-content:center; gap:10px;">
-                <img src="img/logo.png" alt="CleanSheet Logo" style="max-width:45px; height:auto;">
-                <h1 style="font-size: 42px; margin: 0;">CleanSheet</h1>
-            </div>
-            <h2>Your Messy Excel, Clean in Seconds.</h2>
-            <p>CleanSheet Pro cleans, merges, compares and analyzes your Excel files. 100% offline, nothing is uploaded to the internet.</p>
+  <header class="top">
+    <div class="wrap bar">
+      <a class="brand" href="#top">
+        <img src="img/logo.png" alt="">
+        CleanSheet
+      </a>
+      <nav>
+        <a href="#how" data-i18n="nav.how">How it works</a>
+        <a href="#features" data-i18n="nav.features">Features</a>
+        <a href="#plans" data-i18n="nav.plans">Plans</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      </nav>
+      <button type="button" id="langBtn" class="lang">ES</button>
+    </div>
+  </header>
 
-            <img src="img/pantalla-principal.png" alt="CleanSheet Main Screen" class="demo-img" style="max-width: 900px; width:100%;">
+  <section class="hero" id="top">
+    <div class="wrap">
+      <p class="eyebrow" data-i18n="hero.eyebrow">Windows 10/11 · one-time payment · files never leave your PC</p>
+      <div class="title-row">
+        <img src="img/logo.png" alt="CleanSheet" class="logo">
+        <h1>CleanSheet</h1>
+      </div>
+      <h2 data-i18n="hero.tagline">Your messy Excel, cleaned in seconds.</h2>
+      <p class="lead" data-i18n="hero.lead">Desktop software for accountants, offices, and small businesses. Clean, merge, compare, and analyze Excel or CSV without uploading anything. Preview first. The original file stays untouched.</p>
+      <div class="cta-row">
+        <a class="btn ghost" href="https://cleansheetsoftware.lemonsqueezy.com/checkout/buy/4afec070-3758-4041-948d-77c341548c48" data-i18n="cta.basic">Basic — $21.99</a>
+        <a class="btn" href="https://cleansheetsoftware.lemonsqueezy.com/checkout/buy/b4eadaae-bd4c-41f5-b2a1-5c813c390b70" data-i18n="cta.pro">Pro — $41.99</a>
+      </div>
+      <p class="tiny" data-i18n="hero.lifetime">Lifetime license. No subscription. Download the .exe after checkout.</p>
+      <img src="img/pantalla-principal.png" alt="CleanSheet main window" class="hero-shot">
+      <div class="flow">
+        <div><strong data-i18n="flow.before">Before</strong><span data-i18n="flow.messy">Messy Excel</span></div>
+        <span>→</span>
+        <div><strong>CleanSheet</strong><span data-i18n="flow.seconds">In seconds</span></div>
+        <span>→</span>
+        <div><strong data-i18n="flow.after">After</strong><span data-i18n="flow.clean">Clean file, original kept</span></div>
+      </div>
+    </div>
+  </section>
 
-            <!-- BOTONES ACTUALIZADOS -->
-            <div style="display:flex; gap:15px; justify-content:center; margin-top:20px; flex-wrap:wrap;">
-                <a href="https://cleansheetsoftware.lemonsqueezy.com/checkout/buy/4afec070-3758-4041-948d-77c341548c48" class="btn" style="background:#e5e7eb; color:#111; padding:15px 30px; border-radius:8px; text-decoration:none; font-weight:bold;">Basic - $21.99</a>
+  <section class="chips">
+    <div class="wrap chip-row">
+      <span data-i18n="chip.win">Windows 10 &amp; 11 (64-bit)</span>
+      <span data-i18n="chip.exe">Single .exe — no Python</span>
+      <span data-i18n="chip.csv">Excel and CSV</span>
+      <span data-i18n="chip.lang">App in Spanish and English</span>
+    </div>
+  </section>
 
-                <a href="https://cleansheetsoftware.lemonsqueezy.com/checkout/buy/b4eadaae-bd4c-41f5-b2a1-5c813c390b70" class="btn" style="background:white; color:#2563eb; padding:15px 35px; border-radius:8px; text-decoration:none; font-weight:bold; font-size:18px;">Pro - $41.99</a>
-            </div>
+  <section class="problem">
+    <div class="wrap narrow">
+      <h3 data-i18n="problem.title">Spreadsheets mix formats because people type differently</h3>
+      <p data-i18n="problem.body">Duplicates with accents, dates as 06/17/2026 next to “17 de junio”, empty rows, WhatsApp lists pasted as text. Excel can fix this, but it takes filters, formulas, and extra clicks. CleanSheet is built for that weekly cleanup — especially in Spanish-speaking offices.</p>
+    </div>
+  </section>
 
-            <div style="display:flex; gap:40px; justify-content:center; margin-top:30px; flex-wrap:wrap; align-items:center;">
-                <div style="text-align:center;">
-                    <p style="font-weight:bold; font-size:18px; margin:0;">Before</p>
-                    <p style="font-size:14px; color:#e5e7eb; margin:5px 0 0 0;">Messy Excel</p>
-                </div>
-                <div style="font-size:24px; font-weight:bold; color:white;">→</div>
-                <div style="text-align:center;">
-                    <p style="font-weight:bold; font-size:18px; margin:0;">CleanSheet</p>
-                    <p style="font-size:14px; color:#e5e7eb; margin:5px 0 0 0;">In Seconds</p>
-                </div>
-                <div style="font-size:24px; font-weight:bold; color:white;">→</div>
-                <div style="text-align:center;">
-                    <p style="font-weight:bold; font-size:18px; margin:0;">After</p>
-                    <p style="font-size:14px; color:#e5e7eb; margin:5px 0 0 0;">Clean Excel</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="how" class="how">
+    <div class="wrap">
+      <h3 data-i18n="how.title">How it works</h3>
+      <div class="steps">
+        <article>
+          <span>1</span>
+          <h4 data-i18n="how.1t">Drop a file</h4>
+          <p data-i18n="how.1b">Open .xlsx, .xls, or .csv. Nothing is uploaded. Work stays on this computer.</p>
+        </article>
+        <article>
+          <span>2</span>
+          <h4 data-i18n="how.2t">Preview, then apply</h4>
+          <p data-i18n="how.2b">See what will change. Ambiguous dates and odd cells are marked instead of guessed in silence.</p>
+        </article>
+        <article>
+          <span>3</span>
+          <h4 data-i18n="how.3t">Save a new copy</h4>
+          <p data-i18n="how.3b">The original is never overwritten. You get a cleaned file (for example Nombre_limpio.xlsx).</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <!-- PROBLEM -->
-    <section class="problema">
-        <div class="container">
-            <h3 style="font-size:32px;">Do you have Excel files full of messy data?</h3>
-            <p style="font-size:18px;">Duplicates, bad dates, empty cells... CleanSheet fixes it in 1 click.</p>
-        </div>
-    </section>
+  <section id="features">
+    <div class="wrap">
+      <h3 data-i18n="feat.title">What you can do</h3>
+      <p class="center muted" data-i18n="feat.sub">Basic covers everyday cleaning. Pro adds merge, compare, templates, PDF, reports, and more.</p>
+    </div>
 
-    <!-- FEATURE 1: COMPARE -->
-    <section>
-        <h3>⚡ Compare 2 Excel Files</h3>
-        <p style="max-width:600px; margin:0 auto;">Compare 2 files and instantly find what changed, what was added and what was removed. Perfect for audits.</p>
-        <img src="img/comparar_excel.png" alt="Compare Excel" class="funcion">
-    </section>
+    <article class="feature">
+      <h4 data-i18n="f.dup.h">Remove duplicates</h4>
+      <p data-i18n="f.dup.p">Exact matches and similar names (“Juan Perez” / “Juan Pérez”). You choose which columns to compare.</p>
+      <img src="img/quitar_duplicados.png" alt="Remove duplicates">
+    </article>
+    <article class="feature alt">
+      <h4 data-i18n="f.cmp.h">Compare two Excel files</h4>
+      <p data-i18n="f.cmp.p">See what was added, removed, or changed. Useful for audits and monthly versions.</p>
+      <img src="img/comparar_excel.png" alt="Compare Excel">
+    </article>
+    <article class="feature">
+      <h4 data-i18n="f.mrg.h">Merge files</h4>
+      <p data-i18n="f.mrg.p">Combine several workbooks into one instead of copy-paste from every branch or month.</p>
+      <img src="img/juntar_archivos.png" alt="Merge files">
+    </article>
+    <article class="feature alt">
+      <h4 data-i18n="f.brk.h">Broken formulas</h4>
+      <p data-i18n="f.brk.p">Find #REF!, #N/A, #VALUE! and similar errors in a report. CleanSheet lists them so you can fix them in Excel — it does not rewrite formulas automatically.</p>
+      <img src="img/formulas_rotas.png" alt="Broken formulas">
+    </article>
+    <article class="feature">
+      <h4 data-i18n="f.rep.h">Automatic reports</h4>
+      <p data-i18n="f.rep.p">Totals, charts, and a summary from the sheet you already have — without building the formulas by hand.</p>
+      <img src="img/reportes_automaticos.png" alt="Automatic reports">
+    </article>
+    <article class="feature alt">
+      <h4 data-i18n="f.frm.h">Formula builder</h4>
+      <p data-i18n="f.frm.p">Describe the calculation in Spanish (the way Excel is used in Latin America). CleanSheet gives you the formula ready to paste, including functions such as SUMAR.SI.CONJUNTO.</p>
+      <img src="img/formulador.png" alt="Formula builder">
+    </article>
+    <article class="feature">
+      <h4 data-i18n="f.wa.h">Paste from WhatsApp</h4>
+      <p data-i18n="f.wa.p">Turn a copied chat list into a table, then save as Excel.</p>
+      <img src="img/pegar_whatsapp.png" alt="Paste from WhatsApp">
+    </article>
+  </section>
 
-    <!-- FEATURE 2: MERGE -->
-    <section>
-        <h3>📁 Merge Files</h3>
-        <p style="max-width:600px; margin:0 auto;">Merge 10 Excels into 1 file with 1 click. Say goodbye to copy and paste.</p>
-        <img src="img/juntar_archivos.png" alt="Merge Files" class="funcion">
-    </section>
+  <section class="gallery">
+    <div class="wrap">
+      <h3 data-i18n="gal.title">Reports from your own data</h3>
+      <div class="grid-capturas">
+        <figure>
+          <img src="img/reporte_1.png" alt="Sales report">
+          <figcaption data-i18n="gal.1">Sales</figcaption>
+        </figure>
+        <figure>
+          <img src="img/reporte_2.png" alt="Inventory report">
+          <figcaption data-i18n="gal.2">Inventory</figcaption>
+        </figure>
+        <figure>
+          <img src="img/reporte_3.png" alt="Customer report">
+          <figcaption data-i18n="gal.3">Customers</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
 
-    <!-- FEATURE 3: DUPLICATES -->
-    <section>
-        <h3>🧹 Remove Duplicates</h3>
-        <p style="max-width:600px; margin:0 auto;">Remove exact and similar duplicates. Get your database clean instantly.</p>
-        <img src="img/quitar_duplicados.png" alt="Remove Duplicates" class="funcion">
-    </section>
+  <section id="plans" class="plans">
+    <div class="wrap">
+      <h3 data-i18n="plans.title">Plans</h3>
+      <p class="center muted" data-i18n="plans.sub">Pay once. Keep the license. Upgrade from Basic to Pro later if you need the extra tools.</p>
+      <div class="plan-grid">
+        <article class="plan">
+          <h4 data-i18n="plans.basic">Basic</h4>
+          <p class="price">$21.99 <span data-i18n="plans.once">one-time</span></p>
+          <p class="note" data-i18n="plans.basic.note">Up to 10,000 rows per file</p>
+          <ul>
+            <li data-i18n="pb.1">Duplicates, text, dates, junk rows</li>
+            <li data-i18n="pb.2">Validate emails, phones, numbers</li>
+            <li data-i18n="pb.3">Find and replace</li>
+            <li data-i18n="pb.4">Clean-all wizard</li>
+            <li data-i18n="pb.5">Excel ↔ CSV</li>
+          </ul>
+          <a class="btn dark" href="https://cleansheetsoftware.lemonsqueezy.com/checkout/buy/4afec070-3758-4041-948d-77c341548c48" data-i18n="plans.buyBasic">Buy Basic</a>
+        </article>
+        <article class="plan featured">
+          <h4>Pro</h4>
+          <p class="price">$41.99 <span data-i18n="plans.once">one-time</span></p>
+          <p class="note" data-i18n="plans.pro.note">Up to 50,000 rows · everything in Basic, plus</p>
+          <ul>
+            <li data-i18n="pp.1">Merge, split by column, compare</li>
+            <li data-i18n="pp.2">Saved templates and Excel starters</li>
+            <li data-i18n="pp.3">Join/split columns, fill blanks</li>
+            <li data-i18n="pp.4">Stats, PDF, auto reports</li>
+            <li data-i18n="pp.5">Formula builder, broken formulas, WhatsApp paste</li>
+          </ul>
+          <a class="btn" href="https://cleansheetsoftware.lemonsqueezy.com/checkout/buy/b4eadaae-bd4c-41f5-b2a1-5c813c390b70" data-i18n="plans.buyPro">Buy Pro</a>
+        </article>
+      </div>
 
-    <!-- FEATURE 4: FORMULAS -->
-    <section>
-        <h3>🔧 Fix Broken Formulas</h3>
-        <p style="max-width:600px; margin:0 auto;">Detect and automatically repair #REF! #N/A #VALUE! errors.</p>
-        <img src="img/formulas_rotas.png" alt="Fix Formulas" class="funcion">
-    </section>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th data-i18n="th.feat">Feature</th>
+              <th data-i18n="plans.basic">Basic</th>
+              <th>Pro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td data-i18n="t.1">Remove duplicates</td><td>✓</td><td>✓</td></tr>
+            <tr><td data-i18n="t.2">Fix text</td><td>✓</td><td>✓</td></tr>
+            <tr><td data-i18n="t.3">Fix dates (DD/MM and more)</td><td>✓</td><td>✓</td></tr>
+            <tr><td data-i18n="t.4">Remove empty rows/columns</td><td>✓</td><td>✓</td></tr>
+            <tr><td data-i18n="t.5">Validate data</td><td>✓</td><td>✓</td></tr>
+            <tr><td data-i18n="t.6">Find and replace</td><td>✓</td><td>✓</td></tr>
+            <tr><td data-i18n="t.7">Clean-all wizard</td><td>✓</td><td>✓</td></tr>
+            <tr><td data-i18n="t.8">Convert Excel ↔ CSV</td><td>✓</td><td>✓</td></tr>
+            <tr><td data-i18n="t.9">Merge / split / compare</td><td>—</td><td>✓</td></tr>
+            <tr><td data-i18n="t.10">Templates, join columns, fill blanks</td><td>—</td><td>✓</td></tr>
+            <tr><td data-i18n="t.11">Statistics, PDF, reports</td><td>—</td><td>✓</td></tr>
+            <tr><td data-i18n="t.12">Formula builder, broken formulas, WhatsApp</td><td>—</td><td>✓</td></tr>
+            <tr><td data-i18n="t.13">Row limit</td><td>10,000</td><td>50,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
 
-    <!-- FEATURE 5: REPORTS -->
-    <section>
-        <h3>📊 Automatic Reports</h3>
-        <p style="max-width:600px; margin:0 auto;">Generate totals, charts and summaries with 1 click. No formulas needed.</p>
-        <img src="img/reportes_automaticos.png" alt="Automatic Reports" class="funcion">
-    </section>
+  <section id="license" class="license">
+    <div class="wrap narrow">
+      <h3 data-i18n="lic.title">After you buy</h3>
+      <ol>
+        <li data-i18n="lic.1">Lemon Squeezy emails the installer and a license key (a UUID, for example 80e15db5-c796-…).</li>
+        <li data-i18n="lic.2">Open CleanSheet → License and paste that key as-is.</li>
+        <li data-i18n="lic.3">The app checks the key once (internet) and stores Basic or Pro on this PC. Cleaning files does not need the internet.</li>
+      </ol>
+    </div>
+  </section>
 
-    <!-- FEATURE 6: FORMULA BUILDER -->
-    <section>
-        <h3>✍️ Smart Formula Builder</h3>
-        <p style="max-width:600px; margin:0 auto;">Write what you need in plain English and CleanSheet generates the Excel formula for you.</p>
-        <img src="img/formulador.png" alt="Formula Builder" class="funcion">
-    </section>
+  <section class="seguridad">
+    <div class="wrap narrow">
+      <h3 data-i18n="sec.title">Your client files stay on your computer</h3>
+      <p data-i18n="sec.body">Payroll, sales, and customer lists are processed locally. CleanSheet does not upload your spreadsheets to our servers. The only optional online step is verifying the Lemon license key the first time.</p>
+    </div>
+  </section>
 
-    <!-- FEATURE 7: WHATSAPP -->
-    <section>
-        <h3>📱 Paste from WhatsApp</h3>
-        <p style="max-width:600px; margin:0 auto;">Copy data from WhatsApp and paste it directly as a table in Excel.</p>
-        <img src="img/pegar_whatsapp.png" alt="Paste WhatsApp" class="funcion">
-    </section>
+  <section id="faq" class="faq">
+    <div class="wrap narrow">
+      <h3>FAQ</h3>
+      <details open>
+        <summary data-i18n="faq.1q">Is it a subscription?</summary>
+        <p data-i18n="faq.1a">No. You pay once per plan. The license is yours to keep for that version line.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.2q">Does it work offline?</summary>
+        <p data-i18n="faq.2a">Yes for cleaning. You only need internet when you first activate the Lemon key.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.3q">What language is the app?</summary>
+        <p data-i18n="faq.3a">Spanish and English. Switch in the toolbar. Date and text tools are built for Latin American Excel (day first, Spanish months).</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.4q">Will it change my original file?</summary>
+        <p data-i18n="faq.4a">No. CleanSheet always writes a new file.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.5q">Mac or phone?</summary>
+        <p data-i18n="faq.5a">Not yet. Windows 10 and 11, 64-bit, one .exe. No need to install Python.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.6q">Who is it for?</summary>
+        <p data-i18n="faq.6a">Accountants, admins, sales teams, and small businesses that live in Excel — in Guatemala, Mexico, the rest of LATAM, and anywhere English is easier.</p>
+      </details>
+    </div>
+  </section>
 
-    <!-- REPORT EXAMPLES -->
-    <section>
-        <h3>See CleanSheet in Action</h3>
-        <div class="grid-capturas">
-            <div>
-                <img src="img/reporte_1.png" alt="Report 1">
-                <p>Sales Report</p>
-            </div>
-            <div>
-                <img src="img/reporte_2.png" alt="Report 2">
-                <p>Inventory Report</p>
-            </div>
-            <div>
-                <img src="img/reporte_3.png" alt="Report 3">
-                <p>Customer Report</p>
-            </div>
-        </div>
-    </section>
+  <section class="cta">
+    <div class="wrap">
+      <h3 data-i18n="cta.title">Start with a clean sheet</h3>
+      <div class="cta-row">
+        <a class="btn ghost-on-blue" href="https://cleansheetsoftware.lemonsqueezy.com/checkout/buy/4afec070-3758-4041-948d-77c341548c48" data-i18n="cta.basic">Basic — $21.99</a>
+        <a class="btn" href="https://cleansheetsoftware.lemonsqueezy.com/checkout/buy/b4eadaae-bd4c-41f5-b2a1-5c813c390b70" data-i18n="cta.pro">Pro — $41.99</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- BASIC VS PRO -->
-    <section class="precios">
-        <div class="container">
-            <h3>Choose your plan</h3>
-            <table style="margin:0 auto;">
-                <tr><th>Feature</th><th>Basic</th><th>Pro</th></tr>
-                <tr><td>Remove duplicates</td><td>✓</td><td>✓</td></tr>
-                <tr><td>Clean text</td><td>✓</td><td>✓</td></tr>
-                <tr><td>Fix dates</td><td>✓</td><td>✓</td></tr>
-                <tr><td>Remove junk</td><td>✓</td><td>✓</td></tr>
-                <tr><td>Validate data</td><td>✓</td><td>✓</td></tr>
-                <tr><td>Find and replace</td><td>✓</td><td>✓</td></tr>
-                <tr><td>Features 7-20</td><td>—</td><td>✓</td></tr>
-            </table>
-            <p><b>Pro includes:</b> Compare Excel, Merge files, Formula Builder, PDF, WhatsApp, Reports and more</p>
-            <div style="margin-top:20px;">
-                <p style="font-size:20px; font-weight:bold;">Basic: $21.99</p>
-                <p style="font-size:24px; font-weight:bold; color:#2563eb;">Pro: $41.99</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECURITY -->
-    <section class="seguridad">
-        <div class="container">
-            <h3>🔒 Your data stays on your computer</h3>
-            <p>CleanSheet works 100% offline. We do not upload your client, sales or payroll files to any external server.</p>
-        </div>
-    </section>
-
-    <!-- DOWNLOAD -->
-    <section id="descarga" class="cta" style="background: #2563eb; color:white;">
-        <div class="container">
-            <h3>Start cleaning Excel today</h3>
-            <a href="https://cleansheetsoftware.lemonsqueezy.com/checkout/buy/b4eadaae-bd4c-41f5-b2a1-5c813c390b70" class="btn" style="background:white; color:#2563eb;">Get CleanSheet Pro - $41.99</a>
-        </div>
-    </section>
-
-    <footer style="text-align:center; padding:20px;">
-        <p>© 2026 CleanSheet. Made in Guatemala</p>
-    </footer>
+  <footer>
+    <p data-i18n="foot">© 2026 CleanSheet · Made in Guatemala</p>
+    <p><a href="mailto:alvaradoyonatan001@gmail.com">alvaradoyonatan001@gmail.com</a></p>
+    <p class="tiny" data-i18n="foot.domain">Custom domain later. Checkout is already live on Lemon Squeezy.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

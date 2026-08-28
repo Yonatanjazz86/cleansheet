@@ -127,7 +127,7 @@ const I18N = {
     "aff.3": "Recibes tu propio enlace de seguimiento. Las solicitudes se revisan antes de aprobar.",
     "aff.cta": "Quiero ser afiliado",
     "cta.title": "Empieza con una hoja limpia",
-    "foot": "© 2026 CleanSheet · Hecho en Guatemala",
+    "foot": "© 2026 CleanSheet · Sitio oficial",
     "foot.aff": "Programa de afiliados — gana 30%",
     "foot.store": "Tienda",
     "foot.demo": "Demo en YouTube",

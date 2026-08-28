@@ -4,14 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CleanSheet — Your messy Excel, cleaned in seconds</title>
-  <meta name="description" content="Windows desktop app that cleans Excel and CSV on your PC: duplicates, dates, text, merge, compare, Spanish formula builder, PDF. 100% local. One-time payment. Basic $21.99, Pro $41.99.">
+  <meta name="description" content="Windows app to clean Excel and CSV on your PC: remove duplicates, fix dates, merge files, compare sheets. 100% local. No Excel install required. One-time payment.">
   <link rel="canonical" href="https://yonatanjazz86.github.io/cleansheet/">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="CleanSheet — Your messy Excel, cleaned in seconds">
   <meta property="og:description" content="Clean Excel on your computer. Nothing uploaded. One-time license for Windows.">
   <meta property="og:image" content="https://yonatanjazz86.github.io/cleansheet/img/pantalla-principal.png">
   <meta property="og:url" content="https://yonatanjazz86.github.io/cleansheet/">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="img/logo.png">
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"CleanSheet","url":"https://yonatanjazz86.github.io/cleansheet/","operatingSystem":"Windows 10, Windows 11","applicationCategory":"BusinessApplication","description":"Desktop app that cleans Excel and CSV locally: duplicates, dates, merge, compare.","offers":[{"@type":"Offer","name":"Basic","price":"21.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro","price":"41.99","priceCurrency":"USD"}]}
+  </script>
 </head>
 <body>
   <header class="top">
@@ -43,6 +48,7 @@
       <div class="cta-row">
         <a class="btn ghost" href="https://cleansheetsoftware.lemonsqueezy.com/checkout/buy/4afec070-3758-4041-948d-77c341548c48" data-i18n="cta.basic">Basic — $21.99</a>
         <a class="btn" href="https://cleansheetsoftware.lemonsqueezy.com/checkout/buy/b4eadaae-bd4c-41f5-b2a1-5c813c390b70" data-i18n="cta.pro">Pro — $41.99</a>
+        <a class="btn ghost" href="#demo" data-i18n="cta.demo">Watch 1-min demo</a>
       </div>
       <p class="tiny" data-i18n="hero.lifetime">Lifetime license. No subscription. Download the .exe after checkout.</p>
       <img src="img/pantalla-principal.png" alt="CleanSheet main window" class="hero-shot">
@@ -59,7 +65,7 @@
   <section class="chips">
     <div class="wrap chip-row">
       <span data-i18n="chip.win">Windows 10 &amp; 11 (64-bit)</span>
-      <span data-i18n="chip.exe">Single .exe — no Python</span>
+      <span data-i18n="chip.exe">Single .exe — Excel not required</span>
       <span data-i18n="chip.csv">Excel and CSV</span>
       <span data-i18n="chip.lang">App in Spanish and English</span>
     </div>
@@ -91,6 +97,16 @@
           <h4 data-i18n="how.3t">Save a new copy</h4>
           <p data-i18n="how.3b">The original is never overwritten. You get a cleaned file (for example Nombre_limpio.xlsx).</p>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="demo" class="demo">
+    <div class="wrap">
+      <h3 data-i18n="demo.title">See it in one minute</h3>
+      <p class="center muted" data-i18n="demo.sub">No voice-over — you see the real Windows app: load a file and remove duplicates.</p>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube-nocookie.com/embed/dUH-i6Gcq5A" title="CleanSheet demo" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
       </div>
     </div>
   </section>
@@ -269,6 +285,18 @@
         <summary data-i18n="faq.7q">Is there an affiliate program?</summary>
         <p data-i18n="faq.7a">Yes. You earn 30% of a paid Basic or Pro purchase (not for a download). Apply on Lemon Squeezy; payouts have a ~Q80 / US$10 minimum and about 30 days.</p>
       </details>
+      <details>
+        <summary data-i18n="faq.8q">Do I need Microsoft Excel installed?</summary>
+        <p data-i18n="faq.8a">No. CleanSheet opens .xlsx, .xls, and .csv by itself. Excel is optional if you want to open the cleaned file there afterwards.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.9q">Windows says “protected your PC” (SmartScreen)?</summary>
+        <p data-i18n="faq.9a">That warning is common for new software that is not yet widely signed. Choose More info → Run anyway. The files you clean never leave this computer.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.10q">Refunds and support?</summary>
+        <p data-i18n="faq.10a">If the download or license key fails, email us. Checkout is handled by Lemon Squeezy; we can refund a purchase from there when something did not work.</p>
+      </details>
     </div>
   </section>
 
@@ -301,6 +329,7 @@
     <p data-i18n="foot">© 2026 CleanSheet · Made in Guatemala</p>
     <p><a href="mailto:alvaradoyonatan001@gmail.com">alvaradoyonatan001@gmail.com</a></p>
     <p><a href="https://cleansheetsoftware.lemonsqueezy.com/affiliates" data-i18n="foot.aff">Affiliate program — earn 30%</a></p>
+    <p class="tiny"><a href="https://cleansheetsoftware.lemonsqueezy.com" data-i18n="foot.store">Store</a> · <a href="https://youtu.be/dUH-i6Gcq5A" data-i18n="foot.demo">Demo on YouTube</a></p>
     <p class="tiny" data-i18n="foot.domain">Custom domain later. Checkout is already live on Lemon Squeezy.</p>
   </footer>
   <script src="script.js"></script>

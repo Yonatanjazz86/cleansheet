@@ -62,7 +62,7 @@ const I18N = {
     "pb.2": "Validar correos, teléfonos, números",
     "pb.3": "Buscar y reemplazar",
     "pb.4": "Asistente limpiar todo",
-    "pb.5": "Excel ↔ CSV",
+    "pb.5": "Abre Excel y CSV; exportar CSV",
     "plans.pro.note": "Hasta 50,000 filas · todo lo de Básico, más",
     "pp.1": "Juntar, separar por columna, comparar",
     "pp.2": "Plantillas guardadas y plantillas Excel",
